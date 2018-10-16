@@ -1,0 +1,52 @@
+  /* **
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+  
+    */
+
+/* MOBILE HOME*/
+
+.header{
+  background-color: hsl(0, 0%, 97%);
+  display: flex;
+  height: 320px;
+  /* justify-content: center; */
+  align-items: center;
+  flex-grow: 1;
+  border: 2px solid black;
+
+}
+.nav{
+  display: flex;
+  /* justify-content: flex-end; */
+  // padding: 2%;
+  /* flex-grow: 4; */
+  /* align-items: flex-end; */
+  /* justify-content: center; */
+  // height: 100%;
+  // border: 2px solid black;
+  flex-grow: 1;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: space-evenly;
+ /* height: 100%; */
+
+
+}
+
+
+.footer{
+ display: flex;
+//  flex-grow: 1;
+justify-content: flex-start;
+align-items: flex-start;
+// line-height: 1px;
+}
+/* MOBILE ABOUT*/

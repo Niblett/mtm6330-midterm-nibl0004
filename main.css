@@ -1,0 +1,320 @@
+
+/* **
+sources:
+www.w3schools.com
+course content
+
+*/
+
+/*HOME MOBILE */
+/* Extra small devices (phones, 600px and down) */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media all and (min-width: 480px) and (max-width: 767px){
+  
+.nav{
+    display: flex;
+    /* justify-content: flex-end; */
+    /* padding: 2%; */
+    /* align-items: flex-end; */
+    justify-content: center;
+    align-items: center;
+   /* height: 100%; */
+    flex-grow: 1;
+    /* text-align: center; */
+    text-transform: uppercase;
+    padding: 2%;
+    border: 5px solid rgb(151, 36, 36);
+    width: 90px;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+
+/* text-decoration: none; */
+}
+
+.logo{
+  /* when adjusting width, the menu collapses */
+  /* height: 80px; */
+  /* width: 80px; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1; 
+  width: 200px;
+  /* height: 100%; */
+  border: 2px solid rgb(143, 243, 49);
+  /* width: auto; */
+
+  }
+
+  /* align-self: center; */
+  /* justify-content: flex-start; */
+  /* flex-grow: 1; */
+  /* align-items: flex-start; */
+}
+
+.img{
+  /* border: 2px solid black; */
+  border: 5px solid #962115;
+  /* width: 100%;
+  height: auto; */
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* padding: 5%; */
+  flex-grow: 1;
+  padding: 2%;
+  }
+  
+
+.home, .about, .shop, .contact{
+  display: flex;
+  padding: 4%;
+  font-size: 1.4rem;
+  font-family: 'Raleway', sans-serif;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* background-color: hsl(143, 92%, 64%); */
+  cursor: pointer;
+
+}
+.header{
+display: flex;
+flex-grow:1;
+flex-wrap: wrap;
+font-size: 1.2rem;
+font-family: 'Didact Gothic', sans-serif;
+justify-content: center;
+align-items: center;
+}
+  .wrapper{
+    background-color: #f58675;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+/* card 1 */
+  .water{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: center;
+  }
+  /* card 2 */
+  .new{
+  /* border: 2px solid orange; */
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  width: 300px;
+  justify-content: center;
+  }
+  /* card 3  */
+  .seasonal{
+    /* border: 2px solid orange; */
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: center;
+    }
+    /* for all cards */
+  .description{
+    display: flex;
+    justify-content: center;
+    font-family: 'Comfortaa', cursive; 
+    font-size: 2rem;
+    padding: 2%;
+    /* font-weight: 700; */
+    /* background-color: azure; */
+  }
+  .intro{
+    font-family: 'Comfortaa', cursive; 
+  }
+
+  .footer{
+    border: 2px solid rebeccapurple;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    /* This is real teal */
+    background-color: rgb(70,172,185);
+    color: rgb(251, 252, 253);
+    
+  }
+  /* ******************* */
+/* ABOUT MOBILE */
+
+.history{
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 1.4rem;
+}
+/* .collection{
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 1.4rem;
+} */
+img{
+  display: flex;
+  width: 400px;
+flex-grow:1;
+flex-wrap: wrap;
+font-size: 1.2rem;
+font-family: 'Didact Gothic', sans-serif;
+justify-content: center;
+align-items: center;
+}
+
+.executive, .supplier, .hands{
+/* justify-content: center; */
+/* align-items: center; */
+width: 400px;
+display: flex;
+flex-grow:1;
+flex-wrap: wrap;
+font-size: 1.2rem;
+font-family: 'Didact Gothic', sans-serif;
+justify-content: center;
+align-items: center;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+  /* ******************* */
+/* SHOP MOBILE */
+  /* card 3  */
+  .yellow, .red, .purple, .pink, .mixed, .purpYell, .pinkYell, .lilyPink{
+    /* border: 2px solid orange; */
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: 'Didact Gothic', sans-serif;
+    }
+
+/* ************************************************************************ */
+
+/* Tablet - desktop */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+/* and (max-width: 1440px)  */
+{
+/* CONFIRM MAX IS WORKING */
+  /* you can use this for tablet & desktop */
+  
+/* HOME TABLET AND DESKTOP*/
+/* Main Nav  (holds logo & nav bar) */
+  .header{
+    display: flex;
+    /* justify-content: flex-end; */
+    /* padding: 2%; */
+    /* align-items: flex-end; */
+    justify-content: center;
+    align-items: center;
+   /* height: 100%; */
+    flex-grow: 1;
+    /* letter-spacing: 0.5px; */
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1%;
+    border: 5px solid rgb(151, 36, 36);
+  /* background-color: #962115; */
+
+    /* width: 100px; */
+    flex-wrap: wrap;
+  /* height:100%; */
+/* font-family: 'Raleway', sans-serif; */
+}
+.home, .about, .shop, .contact{
+  display: flex;
+  padding: 2%;
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+  flex-wrap: wrap;
+  text-decoration: none;
+  /* justify-content: space-between; */
+}
+.wrapper{
+  border: 2px solid black;
+  background-color: #f58675;
+  /* width: 100%;
+  height: auto; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding: 5%; */
+  flex-grow: 1;
+  /* padding: 2%; */
+  }
+
+  .intro{
+    font-family: 'Comfortaa', cursive; 
+    font-size: 1.4rem;
+  }
+  /* for all 3 cards */
+  .description{
+    display: flex;
+    justify-content: center;
+    font-family: 'Comfortaa', cursive; 
+    font-size: 2rem;
+    padding: 2%;
+  }
+  /* card 1, 2 & 3 */
+  .water, .new, .seasonal{
+    /* border: 2px solid#962115; */
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: center;
+  }
+  .footer{
+    border: 2px solid rebeccapurple;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    /* This is real teal */
+    background-color: rgb(70,172,185);
+    color: rgb(251, 252, 253);
+    
+  }
+/* ************************************** */
+    /* ABOUT MOBILE &  DESKTOP */
+.executive, .supplier, .hands{
+  display: flex;
+  align-items: center;
+  /* flex-grow: 1; */
+  flex-wrap: wrap;
+  /* width: 300px; */
+  justify-content: center;
+  flex-grow: 1;
+  /* width:  */
+  
+  };
+/* ************************************** */
+    /* SHOP DESKTOP */
+    /* .yellow, .red, .purple, .pink, .mixed, .purpYell, .pinkYell, .lilyPink{
+      font-size: 3rem;
+    }; */
+
+
+    /* ************************************** */
+    /* CONTACT MOBILE */
+}
+
+
+
