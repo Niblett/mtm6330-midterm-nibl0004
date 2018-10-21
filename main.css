@@ -5,19 +5,24 @@ www.w3schools.com
 course content
 
 */
-
+*{
+  box-sizing: border-box;
+}
 /*HOME MOBILE */
 /* Extra small devices (phones, 600px and down) */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media all and (min-width: 300px) and (max-width: 767px){
 
+/* Navigation / Header */
+
   .header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: rgb(70,172,185);
+    background-color:  #46acb9;
+    /* background-color: rgb(70,172,185); */
     border: 5px solid #f58675;
     height: auto;
     /* background-color: #f58675; */
@@ -33,9 +38,23 @@ course content
    font-size: .8rem;
    padding: 2%;
    width: 90%;
+   text-shadow: 2px 2px 3px #022454;
    
     }
-/* Add features if time permits */
+    .logo img{
+      display: flex;
+      /* flex-wrap: wrap; */
+      justify-content: center;
+      align-items: center;
+      /* width: 500px;  */
+      /* min-width: 300px; */
+      /* height: 350px; */
+      background-color: #f58675;
+      width: 100%;
+      height: auto;
+      /* flex-grow: 2; */
+      }
+
     a{
       text-decoration: none;
       font-family: 'Didact Gothic', sans-serif;
@@ -44,24 +63,73 @@ course content
       font-size: 1.2rem;
       cursor: pointer;
     }
-  body{
-    background-color: #f58675;
-    font-family: 'Raleway', sans-serif;
-    /* font-size: 1.2rem; !default */
+    /* Add features if time permits */    
+    a:hover{
+  text-shadow: 4px 3px 5px #022454;
+    }
+
+/* BODY */
+body{
+  background-color: #f58675;
+  font-family: 'Raleway', sans-serif;
+  /* font-size: 1.2rem; !default */
+}
+h1, h2, h3{
+  background-color: #f58675;
+  font-family: 'Montserrat', sans-serif;
+  padding: 3%;
+  color: whitesmoke;
+  text-shadow: 2px 2px 5px  #962115;
+  font-size: 2rem;
+}
+/* for footer */
+h4, h5{
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 1px 1px 2px #022454;
+  padding: 2%;
+}
+/* !default */
+h4{
+  font-size: 1.4rem; 
+}
+.intro, .history, .intro, .info, p{
+  font-size: 1.3rem;
+  color: whitesmoke;
+  text-shadow: 1px 2px 1px #962115;
+  padding: 2%;
   }
-    .home:hover{
-      text-shadow: 4px 3px 5px #022454;
-    }
-    .about:hover{
-      text-shadow: 4px 3px 5px #022454;
-    }
-    .shop:hover{
-      text-shadow: 4px 3px 5px #022454;
-    }
-    .contact:hover{
-      text-shadow: 4px 3px 5px #022454;
-    }
- 
+  img{
+    display: flex;
+    width: 300px;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  font-family: 'Didact Gothic', sans-serif;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 7px #962115;
+  padding: 2%;
+  }
+  .footer{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Raleway', sans-serif; 
+    font-size: 1rem;
+    /* This is real teal */
+    background-color: rgb(70,172,185);
+    color: rgb(251, 252, 253);
+    border: 5px solid #f58675;
+    padding: 2%;
+    
+  }
+  .top{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    color: rgb(251, 252, 253);
+    border: 5px solid #f58675;
+    padding: 2%;
+  }
+ /* HOME */
+
   .wrapper{
     background-color: #f58675;
     border: 5px solid #46acb9;
@@ -71,7 +139,7 @@ course content
     flex-wrap: wrap;
   }
   
-/* card 1 - 3 */
+/* card 1 - 3 HOME*/
   .water, .new, .seasonal{
     display: flex;
     align-items: center;
@@ -82,52 +150,11 @@ course content
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     color:whitesmoke;
-    text-shadow: 3px 4px 5px #962115;
+    text-shadow: 3px 3px 5px #962115;
     /* box-shadow: 4px 4px 5px #962115; */
     padding: 2%;
     }
   
-    img{
-      display: flex;
-      width: 300px;
-    flex-wrap: wrap;
-    font-size: 1rem;
-    font-family: 'Didact Gothic', sans-serif;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 5px 5px 10px #46acb9;
-    padding: 2%;
-    }
-    .logo{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      width: 500px;
-      min-width: 300px;
-      height: 350px;
-      background-color:rgb(70,172,185);
-      }
-      h1, h2{
-        background-color: #f58675;
-        font-family: 'Montserrat', sans-serif;
-        padding: 3%;
-        color: whitesmoke;
-        text-shadow: 2px 2px 5px  #962115;
-      }
-    
-    h3{
-      color: whitesmoke;
-      text-shadow: 2px 2px 5px  #962115;
-      font-size: 2rem;
-      padding: 3%;
-    
-    }
-   fieldset, input{
-     font-size: 1.2rem;
-     font-family: 'Raleway', sans-serif;
-   }
-
     /* for all cards */
   .description{
     display: flex;
@@ -136,48 +163,26 @@ course content
     font-size: 2rem;
     padding: 2%;
   }
- 
-  .intro{
+  /* .intro{
     font-family: 'Comfortaa', cursive; 
     background-color: #f58675;
-  }
-  .footer{
-    /* font-family: 'Montserrat', sans-serif; */
-    font-family: 'Raleway', sans-serif; 
-    font-size: 1rem;
-    /* This is real teal */
-    background-color: rgb(70,172,185);
-    color: rgb(251, 252, 253);
-    border: 5px solid #f58675;
-    
-  }
+  } */
+ 
 
-  /* ******************* */
 /* ABOUT MOBILE */
-
-.history{
+ .history{
   font-family: 'Didact Gothic', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding: 2%;
   color: white;
   text-shadow: 1px 1px 1px #962115;
-
 }
-
-
-/* .img{
-  display: flex;
-  min-width: 300px;
-  justify-content: center;
-  align-items: center;
-  padding: 2%;
-  } */
 .executive, .supplier, .hands{
 width: 300px;
 display: flex;
 flex-grow:1;
 flex-wrap: wrap;
-font-size: 1.2rem;
+font-size: 1.7rem;
 font-family: 'Didact Gothic', sans-serif;
 justify-content: center;
 align-items: center;
@@ -187,35 +192,27 @@ align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
-  
 }
 
-  /* ******************* */
 /* SHOP MOBILE */
+/* Shop Images &  prices */
   .yellow, .red, .purple, .pink, .mixed, .purpYell, .pinkYell, .lilyPink{
-    /* border: 2px solid orange; */
     display: flex;
     align-items: center;
     flex-grow: 1;
     flex-wrap: wrap;
     width: 300px;
     justify-content: center;
-    font-size: 1rem;
-   font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
     color:whitesmoke;
     text-shadow: 3px 4px 5px #962115;
-   /* border: 3px solid #022454; */
+    padding: 2%;
     }
-    p{
-      font-size: 1.3rem;
-      color: whitesmoke;
-      text-shadow: 1px 2px 1px #962115;
-      padding: 2%;
-      }
+   
     .collection {
       font-family: 'Montserrat', sans-serif;
-      /* font: 1.3rem; */
+      font-size: 1.4rem;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -223,11 +220,9 @@ align-items: center;
       padding: 2%;
       background-color: #f58675;
       color: whitesmoke;
-   
     }
  
-
- /* CONTACT */
+ /* CONTACT MOBILE */
  .container{
   background-color: #f58675;
   border: 5px solid #46acb9;
@@ -240,7 +235,11 @@ align-items: center;
   flex-wrap: wrap;
   padding: 2%;
  }
-
+   /* FORM */
+   fieldset, input{
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+  }
  .info{
    background-color: #f58675;
    border: 5px solid #46acb9;
@@ -276,107 +275,135 @@ align-items: center;
 
 }
 
-.green{
+/* .green{
   width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-grow: 1; */
   flex-wrap: wrap;
-
-}
+} */
 }
 
 /* ************************************************************************ */
-/* TABLET */
-/* Tablet - desktop */
+/* DESKTOP & TABLET */
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-/* and (max-width: 1440px)  */
+/* and (max-width: 1440px) { */
 
-/* CONFIRM MAX IS WORKING */
-  /* you can use this for tablet & desktop */
-  
 /* HOME TABLET AND DESKTOP*/
-/* Main Nav  (holds logo & nav bar) */
-  /* .header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 1%;
-    border: 5px solid rgb(151, 36, 36);
-    flex-wrap: wrap;
+/* Main Menu */
 
-} */
-a{
-  text-decoration: none;
-  font-family: 'Didact Gothic', sans-serif;
-  color: whitesmoke;
-  /* color: #022454; */
-  font-weight: 600;
-  font-size: 2rem;
-  /* display: flex;
+.header{
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center; */
-
-}
-.h2{
-  background-color: #f58675;
-  border: 5px solid #46acb9;
-  font-family: 'Montserrat', sans-serif;
-  padding: 3%;
-}
-/* .h4 a{
-  font-size: 1rem;
-} */
-/* a:nth-last-child(){
-  font-size: 1rem;
-} */
-a:hover
-.home .about{
-      justify-content: space-between;
-}
-.home:hover{
-  text-shadow: 4px 3px 5px #022454;
-  /* color: #FFE76B; */
- 
-}
-.about:hover{
-  text-shadow: 4px 3px 5px #022454;
-}
-.shop:hover{
-  text-shadow: 4px 3px 5px #022454;
-}
-.contact:hover{
-  text-shadow: 4px 3px 5px #022454;
-}
-.nav{
+  align-items: center;
+  background-color:  #46acb9;
+  /* background-color: rgb(70,172,185); */
+  border: 5px solid #f58675;
+  height: auto;
+  flex-grow: 1;
+  /* background-color: #f58675; */
+  }
+  .nav{
   text-transform: uppercase;
   flex-grow: 1;
   letter-spacing: 1px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* text-align: center; */
+  justify-content: space-evenly;
   align-items: center;
-  /* justify-content: space-evenly; */
- font-size: .8rem;
+ font-size: 2rem;
  padding: 2%;
- width: 70%;
+ width: 90%;
+ text-shadow: 2px 2px 3px #022454;
   }
-
-  .header{
+  .logo img{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: rgb(70,172,185);
-    flex-grow: 1;
-    border: 5px solid #f58675;
+    background-color: #f58675;
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 10px #962115;
     }
+  
+/* Add features if time permits */
+  a{
+    text-decoration: none;
+    font-family: 'Didact Gothic', sans-serif;
+    color: whitesmoke;
+    font-weight: 800;
+    font-size: 2rem;
+    cursor: pointer;
+    text-shadow: 2px 2px 3px #022454;
+  }
+  a:hover{
+    text-shadow: 4px 3px 6px #022454;
+  }
+body{
+  background-color: #f58675;
+  font-family: 'Raleway', sans-serif;
+  /* font-size: 1.2rem; !default */
+}
+
+h1, h2, h3{
+  background-color: #f58675;
+  font-family: 'Montserrat', sans-serif;
+  padding: 3%;
+  color: whitesmoke;
+  text-shadow: 2px 2px 5px  #962115;
+  font-size: 3rem;
+}
+
+h4, h5{
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 1px 1px 2px #022454;
+  padding: 2%;
+}
+/* !default */
+h4{
+  font-size: 2rem; 
+}
+.intro, .history, .intro, .info, p{
+  font-size: 2rem;
+  color: whitesmoke;
+  text-shadow: 1px 2px 1px #962115;
+  padding: 2%;
+
+  }
+  img{
+    display: flex;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  font-family: 'Didact Gothic', sans-serif;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 7px #962115;
+  padding: 2%;
+  }
+  
+      .footer{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Raleway', sans-serif; 
+    font-size: 1rem;
+    /* This is real teal */
+    background-color: rgb(70,172,185);
+    color: rgb(251, 252, 253);
+    border: 5px solid #f58675;
+    padding: 2%;
+  
+  }
+/* Back to top button */
+  .top{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    color: rgb(251, 252, 253);
+    border: 5px solid #f58675;
+    padding: 2%;
+  }
+  /* HOME */
     .wrapper{
       background-color: #f58675;
       border: 5px solid #46acb9;
@@ -385,26 +412,24 @@ a:hover
       align-items: center;
       flex-wrap: wrap;
     }
-/* .home, .about, .shop, .contact{
-  display: flex;
-  padding: 2%;
-  font-size: 2rem;
-  font-family: 'Raleway', sans-serif;
-  flex-wrap: wrap;
-  text-decoration: none;
- 
-}  */
 
-  .name{
-color: #f58675;
-font-size: 1rem;
-  }
-
-  .intro{
-    font-family: 'Comfortaa', cursive; 
-    font-size: 1.4rem;
-  }
   /* for all 3 cards */
+ 
+/* card 1 - 3 HOME*/
+.water, .new, .seasonal{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  width: 300px;
+  justify-content: center;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  color:whitesmoke;
+  text-shadow: 3px 3px 5px #962115;
+  /* box-shadow: 4px 4px 5px #962115; */
+  padding: 2%;
+  }
   .description{
     display: flex;
     justify-content: center;
@@ -412,75 +437,111 @@ font-size: 1rem;
     font-size: 2rem;
     padding: 2%;
   }
-  /* card 1, 2 & 3 */
-  .water, .new, .seasonal{
-    /* border: 2px solid#962115; */
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    width: 300px;
-    justify-content: center;
-  }
-  .footer{
-    /* border: 2px solid rebeccapurple; */
-    font-family: 'Montserrat', sans-serif;
-    /* font-size: 1rem; */
-    /* This is real teal */
-    background-color: rgb(70,172,185);
-    color: rgb(251, 252, 253);
-   
-    
-  }
+
 /* ************************************** */
     /* ABOUT MOBILE &  DESKTOP */
-.executive, .supplier, .hands{
+    .history{
+      font-family: 'Didact Gothic', sans-serif;
+      font-size: 1.7rem;
+      padding: 2%;
+      color: white;
+      text-shadow: 1px 1px 1px #962115;
+    }
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .executive, .supplier, .hands{
+width: 75%;
+      display: flex;
+      flex-grow:1;
+      flex-wrap: wrap;
+      font-size: 2rem;
+      font-family: 'Didact Gothic', sans-serif;
+      justify-content: center;
+      align-items: center;
+      }
+      
+/* ************************************** */
+  /* SHOP MOBILE */
+/* Shop Images &  prices */
+.yellow, .red, .purple, .pink, .mixed, .purpYell, .pinkYell, .lilyPink{
   display: flex;
   align-items: center;
-  /* flex-grow: 1; */
-  flex-wrap: wrap;
-  /* width: 300px; */
-  justify-content: center;
   flex-grow: 1;
-  /* width:  */
-  
-  };
-/* ************************************** */
-    /* SHOP DESKTOP */
-    /* .yellow, .red, .purple, .pink, .mixed, .purpYell, .pinkYell, .lilyPink{
-      font-size: 3rem;
-    }; */
-
-
+  flex-wrap: wrap;
+  width: 300px;
+  justify-content: center;
+  font-size: 1.7rem;
+  font-family: 'Montserrat', sans-serif;
+  color:whitesmoke;
+  text-shadow: 3px 4px 5px #962115;
+  padding: 2%;
+  }
+  .collection {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background-color: #f58675;
+    color: whitesmoke;
+  }
     /* ************************************** */
     /* CONTACT MOBILE */
 
-.green{
-  width: 50%;
-}
+    .container{
+      background-color: #f58675;
+      border: 5px solid #46acb9;
+      font-family: 'Poppins', sans-serif;
+      /* width: 300px; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* flex-grow: 1; */
+      flex-wrap: wrap;
+      padding: 2%;
+     }
+   /* FORM */
+   fieldset, input{
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+  }
+  .info{
+    background-color: #f58675;
+    border: 5px solid #46acb9;
+    font-family: 'Poppins', sans-serif;
+    /* width: 300px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 2%;
+  }
+
 .map{
-  width: 100%;
-}
-.container{
-  background-color: #f58675c1;
   border: 5px solid #46acb9;
-  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.upcoming{
+  background-color: #f58675;
   /* width: 300px; */
   display: flex;
   justify-content: center;
   align-items: center;
   /* flex-grow: 1; */
   flex-wrap: wrap;
-  padding: 2%;
- }
- .h2{
-   display: flex;
-   justify-content: center;
- }
-.info{
-  background-color: #f58675c1;
+  font-family: 'Montserrat', sans-serif;
+  color:#022454;
+
 }
-/* .upcoming{
-  background-color: #f58675c1;
-} */
 }
