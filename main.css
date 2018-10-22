@@ -65,7 +65,9 @@ course content
     }
     /* Add features if time permits */    
     a:hover{
-  text-shadow: 4px 3px 5px #022454;
+  text-shadow: 5px 4px 6px #022454;
+  font-size: 1.4rem;
+  /* background-color: #46abb9c1; */
     }
 
 /* BODY */
@@ -77,17 +79,17 @@ body{
 h1, h2, h3{
   background-color: #f58675;
   font-family: 'Montserrat', sans-serif;
-  padding: 3%;
+  padding: 1%;
   color: whitesmoke;
   text-shadow: 2px 2px 5px  #962115;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 /* for footer */
 h4, h5{
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
   text-shadow: 1px 1px 2px #022454;
-  padding: 2%;
+  padding: 1%;
 }
 /* !default */
 h4{
@@ -97,7 +99,7 @@ h4{
   font-size: 1.3rem;
   color: whitesmoke;
   text-shadow: 1px 2px 1px #962115;
-  padding: 2%;
+  padding: 1%;
   }
   img{
     display: flex;
@@ -119,11 +121,18 @@ h4{
     color: rgb(251, 252, 253);
     border: 5px solid #f58675;
     padding: 2%;
+    /* height: 300px; */
     
+  }
+  .footer p{
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif; 
+    color: whitesmoke;
+    text-shadow: none;
   }
   .top{
     font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: rgb(251, 252, 253);
     border: 5px solid #f58675;
     padding: 2%;
@@ -160,7 +169,7 @@ h4{
     display: flex;
     justify-content: center;
     font-family: 'Comfortaa', cursive; 
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 2%;
   }
   /* .intro{
@@ -172,7 +181,7 @@ h4{
 /* ABOUT MOBILE */
  .history{
   font-family: 'Didact Gothic', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 2%;
   color: white;
   text-shadow: 1px 1px 1px #962115;
@@ -182,7 +191,7 @@ width: 300px;
 display: flex;
 flex-grow:1;
 flex-wrap: wrap;
-font-size: 1.7rem;
+font-size: 1.1rem;
 font-family: 'Didact Gothic', sans-serif;
 justify-content: center;
 align-items: center;
@@ -212,7 +221,7 @@ align-items: center;
    
     .collection {
       font-family: 'Montserrat', sans-serif;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -350,27 +359,27 @@ body{
 h1, h2, h3{
   background-color: #f58675;
   font-family: 'Montserrat', sans-serif;
-  padding: 3%;
+  padding: 1%;
   color: whitesmoke;
   text-shadow: 2px 2px 5px  #962115;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 h4, h5{
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: 'Poppins', sans-serif;
   text-shadow: 1px 1px 2px #022454;
-  padding: 2%;
+  /* padding: 1%; */
 }
 /* !default */
-h4{
-  font-size: 2rem; 
-}
+/* h4{
+  font-size: 1.2rem; 
+} */
 .intro, .history, .intro, .info, p{
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: whitesmoke;
   text-shadow: 1px 2px 1px #962115;
-  padding: 2%;
+  padding: 1%;
 
   }
   img{
@@ -395,10 +404,16 @@ h4{
     padding: 2%;
   
   }
+  .footer p{
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif; 
+    color: whitesmoke;
+    text-shadow: none;
+  }
 /* Back to top button */
   .top{
     font-family: 'Poppins', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: rgb(251, 252, 253);
     border: 5px solid #f58675;
     padding: 2%;
@@ -423,7 +438,7 @@ h4{
   flex-wrap: wrap;
   width: 300px;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-family: 'Montserrat', sans-serif;
   color:whitesmoke;
   text-shadow: 3px 3px 5px #962115;
@@ -442,7 +457,7 @@ h4{
     /* ABOUT MOBILE &  DESKTOP */
     .history{
       font-family: 'Didact Gothic', sans-serif;
-      font-size: 1.7rem;
+      font-size: 1.4rem;
       padding: 2%;
       color: white;
       text-shadow: 1px 1px 1px #962115;
@@ -454,11 +469,11 @@ h4{
       align-items: center;
     }
     .executive, .supplier, .hands{
-width: 75%;
+      width: 75%;
       display: flex;
       flex-grow:1;
       flex-wrap: wrap;
-      font-size: 2rem;
+      font-size: 1.4rem;
       font-family: 'Didact Gothic', sans-serif;
       justify-content: center;
       align-items: center;
@@ -474,7 +489,7 @@ width: 75%;
   flex-wrap: wrap;
   width: 300px;
   justify-content: center;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-family: 'Montserrat', sans-serif;
   color:whitesmoke;
   text-shadow: 3px 4px 5px #962115;
@@ -482,7 +497,7 @@ width: 75%;
   }
   .collection {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
