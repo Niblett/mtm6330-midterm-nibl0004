@@ -22,10 +22,8 @@ course content
     justify-content: center;
     align-items: center;
     background-color:  #46acb9;
-    /* background-color: rgb(70,172,185); */
     border: 5px solid #f58675;
     height: auto;
-    /* background-color: #f58675; */
     }
    
     .nav{
@@ -43,16 +41,11 @@ course content
     }
     .logo img{
       display: flex;
-      /* flex-wrap: wrap; */
       justify-content: center;
       align-items: center;
-      /* width: 500px;  */
-      /* min-width: 300px; */
-      /* height: 350px; */
       background-color: #f58675;
       width: 100%;
       height: auto;
-      /* flex-grow: 2; */
       }
 
     a{
@@ -62,19 +55,19 @@ course content
       font-weight: 600;
       font-size: 1.2rem;
       cursor: pointer;
+      // text-shadow: 4px 3px 4px #022454;
     }
     /* Add features if time permits */    
     a:hover{
   text-shadow: 5px 4px 6px #022454;
   font-size: 1.4rem;
-  /* background-color: #46abb9c1; */
     }
 
 /* BODY */
 body{
   background-color: #f58675;
   font-family: 'Raleway', sans-serif;
-  /* font-size: 1.2rem; !default */
+  font-size: 1.2rem;
 }
 h1, h2, h3{
   background-color: #f58675;
@@ -243,9 +236,16 @@ align-items: center;
   /* flex-grow: 1; */
   flex-wrap: wrap;
   padding: 2%;
+
  }
+    /* FORM */
+    fieldset{
+      font-size: 1.2rem;
+      font-family: 'Raleway', sans-serif;
+    }
+  
    /* FORM */
-   fieldset, input{
+  input{
     font-size: 1.2rem;
     font-family: 'Raleway', sans-serif;
   }
@@ -345,15 +345,17 @@ align-items: center;
     font-weight: 800;
     font-size: 2rem;
     cursor: pointer;
-    text-shadow: 2px 2px 3px #022454;
+    text-shadow: 4px 3px 4px #022454;
   }
   a:hover{
-    text-shadow: 4px 3px 6px #022454;
-  }
+    text-shadow: 7px 6px 8px #022454;
+    font-size: 2.4rem;
+   color: black;
+      }
 body{
   background-color: #f58675;
   font-family: 'Raleway', sans-serif;
-  /* font-size: 1.2rem; !default */
+
 }
 
 h1, h2, h3{
@@ -397,7 +399,6 @@ h4, h5{
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Raleway', sans-serif; 
     font-size: 1rem;
-    /* This is real teal */
     background-color: rgb(70,172,185);
     color: rgb(251, 252, 253);
     border: 5px solid #f58675;
@@ -526,6 +527,7 @@ h4, h5{
     font-size: 2rem;
     font-family: 'Raleway', sans-serif;
   }
+ 
   .info{
     background-color: #f58675;
     border: 5px solid #46acb9;

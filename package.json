@@ -1,23 +1,14 @@
 {
-  "name": "Mid-term-Working",
+  "name": "mid-term-working-gulp",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Niblett/mtm6330-midterm-nibl0004.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Niblett/mtm6330-midterm-nibl0004/issues"
-  },
-  "homepage": "https://github.com/Niblett/mtm6330-midterm-nibl0004#readme",
+  "author": "Lisa Niblett <nibl0004@algonquinlive.com>",
+  "license": "MIT",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "autoprefixer": "^9.1.5",
+    "cssnano": "^4.1.4",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.1"
   }
 }

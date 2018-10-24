@@ -1,0 +1,467 @@
+/* **
+sources:
+www.w3schools.com
+course content
+
+*/
+* {
+  box-sizing: border-box; }
+
+/*HOME MOBILE */
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media all and (min-width: 300px) and (max-width: 767px) {
+  /* Navigation / Header */
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #46acb9;
+    border: 5px solid #f58675;
+    height: auto; }
+  .nav {
+    text-transform: uppercase;
+    flex-grow: 1;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: .8rem;
+    padding: 2%;
+    width: 90%;
+    text-shadow: 2px 2px 3px #022454; }
+  .logo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f58675;
+    width: 100%;
+    height: auto; }
+  a {
+    text-decoration: none;
+    font-family: 'Didact Gothic', sans-serif;
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer; }
+  /* Add features if time permits */
+  a:hover {
+    text-shadow: 5px 4px 6px #022454;
+    font-size: 1.4rem; }
+  /* BODY */
+  body {
+    background-color: #f58675;
+    font-family: 'Raleway', sans-serif;
+    /* font-size: 1.2rem; !default */ }
+  h1, h2, h3 {
+    background-color: #f58675;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1%;
+    color: whitesmoke;
+    text-shadow: 2px 2px 5px  #962115;
+    font-size: 1.5rem; }
+  /* for footer */
+  h4, h5 {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 2px #022454;
+    padding: 1%; }
+  /* !default */
+  h4 {
+    font-size: 1.4rem; }
+  .intro, .history, .intro, .info, p {
+    font-size: 1.3rem;
+    color: whitesmoke;
+    text-shadow: 1px 2px 1px #962115;
+    padding: 1%; }
+  img {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    font-family: 'Didact Gothic', sans-serif;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 7px #962115;
+    padding: 2%; }
+  .footer {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    /* This is real teal */
+    background-color: #46acb9;
+    color: #fbfcfd;
+    border: 5px solid #f58675;
+    padding: 2%;
+    /* height: 300px; */ }
+  .footer p {
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
+    text-shadow: none; }
+  .top {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #fbfcfd;
+    border: 5px solid #f58675;
+    padding: 2%; }
+  /* HOME */
+  .wrapper {
+    background-color: #f58675;
+    border: 5px solid #46acb9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  /* card 1 - 3 HOME*/
+  .water, .new, .seasonal {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: center;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    text-shadow: 3px 3px 5px #962115;
+    /* box-shadow: 4px 4px 5px #962115; */
+    padding: 2%; }
+  /* for all cards */
+  .description {
+    display: flex;
+    justify-content: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5rem;
+    padding: 2%; }
+  /* .intro{
+    font-family: 'Comfortaa', cursive; 
+    background-color: #f58675;
+  } */
+  /* ABOUT MOBILE */
+  .history {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.1rem;
+    padding: 2%;
+    color: white;
+    text-shadow: 1px 1px 1px #962115; }
+  .executive, .supplier, .hands {
+    width: 300px;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+    font-family: 'Didact Gothic', sans-serif;
+    justify-content: center;
+    align-items: center; }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+  /* SHOP MOBILE */
+  /* Shop Images &  prices */
+  .yellow, .red, .purple, .pink, .mixed, .purpYell, .pinkYell, .lilyPink {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    text-shadow: 3px 4px 5px #962115;
+    padding: 2%; }
+  .collection {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background-color: #f58675;
+    color: whitesmoke; }
+  /* CONTACT MOBILE */
+  .container {
+    background-color: #f58675;
+    border: 5px solid #46acb9;
+    font-family: 'Poppins', sans-serif;
+    /* width: 300px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-grow: 1; */
+    flex-wrap: wrap;
+    padding: 2%; }
+  /* FORM */
+  fieldset {
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif; }
+  /* FORM */
+  input {
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif; }
+  .info {
+    background-color: #f58675;
+    border: 5px solid #46acb9;
+    font-family: 'Poppins', sans-serif;
+    /* width: 300px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 2%; }
+  .map {
+    border: 5px solid #46acb9;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-grow: 1; */
+    flex-wrap: wrap; }
+  .upcoming {
+    background-color: #f58675;
+    /* width: 300px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-grow: 1; */
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+    color: #022454; }
+  /* .green{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+} */ }
+
+/* ************************************************************************ */
+/* DESKTOP & TABLET */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* and (max-width: 1440px) { */
+  /* HOME TABLET AND DESKTOP*/
+  /* Main Menu */
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #46acb9;
+    /* background-color: rgb(70,172,185); */
+    border: 5px solid #f58675;
+    height: auto;
+    flex-grow: 1;
+    /* background-color: #f58675; */ }
+  .nav {
+    text-transform: uppercase;
+    flex-grow: 1;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+    padding: 2%;
+    width: 90%;
+    text-shadow: 2px 2px 3px #022454; }
+  .logo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f58675;
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 10px #962115; }
+  /* Add features if time permits */
+  a {
+    text-decoration: none;
+    font-family: 'Didact Gothic', sans-serif;
+    color: whitesmoke;
+    font-weight: 800;
+    font-size: 2rem;
+    cursor: pointer;
+    text-shadow: 2px 2px 3px #022454; }
+  a:hover {
+    text-shadow: 4px 3px 6px #022454; }
+  body {
+    background-color: #f58675;
+    font-family: 'Raleway', sans-serif;
+    /* font-size: 1.2rem; !default */ }
+  h1, h2, h3 {
+    background-color: #f58675;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1%;
+    color: whitesmoke;
+    text-shadow: 2px 2px 5px  #962115;
+    font-size: 2rem; }
+  h4, h5 {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 2px #022454;
+    /* padding: 1%; */ }
+  /* !default */
+  /* h4{
+  font-size: 1.2rem; 
+} */
+  .intro, .history, .intro, .info, p {
+    font-size: 1.4rem;
+    color: whitesmoke;
+    text-shadow: 1px 2px 1px #962115;
+    padding: 1%; }
+  img {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    font-family: 'Didact Gothic', sans-serif;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 7px #962115;
+    padding: 2%; }
+  .footer {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    /* This is real teal */
+    background-color: #46acb9;
+    color: #fbfcfd;
+    border: 5px solid #f58675;
+    padding: 2%; }
+  .footer p {
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
+    text-shadow: none; }
+  /* Back to top button */
+  .top {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #fbfcfd;
+    border: 5px solid #f58675;
+    padding: 2%; }
+  /* HOME */
+  .wrapper {
+    background-color: #f58675;
+    border: 5px solid #46acb9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  /* for all 3 cards */
+  /* card 1 - 3 HOME*/
+  .water, .new, .seasonal {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    text-shadow: 3px 3px 5px #962115;
+    /* box-shadow: 4px 4px 5px #962115; */
+    padding: 2%; }
+  .description {
+    display: flex;
+    justify-content: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 2rem;
+    padding: 2%; }
+  /* ************************************** */
+  /* ABOUT MOBILE &  DESKTOP */
+  .history {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.4rem;
+    padding: 2%;
+    color: white;
+    text-shadow: 1px 1px 1px #962115; }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+  .executive, .supplier, .hands {
+    width: 75%;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    font-family: 'Didact Gothic', sans-serif;
+    justify-content: center;
+    align-items: center; }
+  /* ************************************** */
+  /* SHOP MOBILE */
+  /* Shop Images &  prices */
+  .yellow, .red, .purple, .pink, .mixed, .purpYell, .pinkYell, .lilyPink {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    text-shadow: 3px 4px 5px #962115;
+    padding: 2%; }
+  .collection {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background-color: #f58675;
+    color: whitesmoke; }
+  /* ************************************** */
+  /* CONTACT MOBILE */
+  .container {
+    background-color: #f58675;
+    border: 5px solid #46acb9;
+    font-family: 'Poppins', sans-serif;
+    /* width: 300px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-grow: 1; */
+    flex-wrap: wrap;
+    padding: 2%; }
+  /* FORM */
+  fieldset, input {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif; }
+  .info {
+    background-color: #f58675;
+    border: 5px solid #46acb9;
+    font-family: 'Poppins', sans-serif;
+    /* width: 300px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 2%; }
+  .map {
+    border: 5px solid #46acb9;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  .upcoming {
+    background-color: #f58675;
+    /* width: 300px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-grow: 1; */
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+    color: #022454; } }
